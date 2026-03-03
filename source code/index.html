@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal portfolio website </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+/*-------------portfolio--------------*/
+.work {
+  background: #1f1f1f; /* dark background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 0, 79, 0.4); /* subtle glow on hover */
+}
+
+.layer h3, .layer ul {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.layer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+h4 {
+  display: inline;
+  color: #ff004f;
+}
+/*-------------contact--------------*/
+ .contact-left {
+  flex-basis:35%;
+}
+
+.contact-right {
+  flex-basis:60%;
+}
+
+.contact-left p {
+  margin-top:30px;
+}
+.contact-left p i {
+  color:#ff004f;
+  margin-right:15px;
+  font-size:25px;
+}
+.social-icons {
+  margin-top:30px;
+}
+.social-icons a{
+  text-decoration:none;
+  margin-right:15px;
+  font-size:30px;
+  color:#ababab;
+  display:inline-block;
+  transition:transform 0.5s;
+}
+.social-icons a:hover{
+ color:#ff004f;
+ transform:translateY(-5px);
+}
+.contact-right form{
+  width:100%;
+}
+form input,form textarea{
+  width:100%;
+  border:0;
+  outline:none;
+  background:#262626;
+  padding:15px;
+  margin:15px 0;
+  color:#fff;
+  font-size:18px;
+  border-radius:6px;
+}
+.btn.btn2{
+  padding:14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ff004f;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn.btn2 a{
+  color: #fff;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.space{
+  width: 100%;
+  padding: 0.1px 0;
+  background: #645f5f;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div id="header">
+  <div class="container">
+    <nav>
+      <h2><span>Port</span>folio</h2>
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-image">
+      <img src="C:\Users\SAI\Desktop\my works\portfolio_1080\images\DK.png"/>
+      
+    </div>
+  <div class="header-text">
+    <h3> Hi,<br> I'm <span>Dipali</span> Kalwaghe </h3> 
+    <p>MCA||Sanjivani University</p>
+  </div>
+    </div>
+  </div>
+  <div class="space">
+     <p></p>
+ </div>
+ 
+  <!--------------------about -------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+       <div class="about-col-1">
+            <img src="C:\Users\SAI\Desktop\my works\portfolio_1080\images\woman-hands-coding-html-and-programming-on-screen-laptop-web-developer.jpg">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2><br>
+          <p>Hello! I’m Dipali Kalwaghe, a Master of Computer Applications (MCA) student with a keen interest in software development and problem-solving. Currently pursuing my degree from Sanjivani University, I am passionate about building efficient and user-friendly applications.
+
+             I have hands-on experience with programming languages like Java, Python, and C++, and I’m also familiar with web technologies such as HTML, CSS, JavaScript, and MySQL. I enjoy working on both frontend and backend development and am exploring frameworks like React and Spring Boot.</p>
+
+          <div class="tab-titles">
+  <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+  <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+  <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+
+<div class="tab-contents active-tab" id="skills">
+  <ul>
+    <li><span>Programming Languages</span><br>C, C++, Java, Python, JavaScript</li>
+    <li><span>Web Development</span><br>HTML, CSS, Bootstrap</li>
+    <li><span>Database Management</span><br>MySQL, PostgreSQL, Oracle</li>
+  </ul>
+</div>
+
+<div class="tab-contents" id="certifications">
+  <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+  </ul>
+</div>
+<div class="tab-contents" id="education">
+  <ul>
+    <li><span>Master of Computer Applications(MCA)</span><br>Sanjivani University<br>Pursuing | 2027</li>
+    <li><span>Bachelor of Computer Science(BCS)</span><br>K.J.S. College, SPPU <br>Completed | 2025</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space">
+     <p></p>
+ </div>
+<!-------------portfolio-------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+  <div class="work">
+    <div class="layer">
+      <h3><b>1. Personal Portfolio Website</b></h3><br>
+      <ul>
+        <li><h4>Tech:</h4>HTML, CSS, JS</li><br>
+        <li><h4>Add:</h4>About me, Skills, Contact from</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work">
+    <div class="layer">
+      <h3><b>2. College Management System</b></h3><br>
+      <ul>
+        <li><h4>Tech:</h4>PHP/Java/Python + MySQL</li><br>
+        <li><h4>Features:</h4>Student Registration, Attendance, Results</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work">
+    <div class="layer">
+      <h3><b>3. Online Quiz App</b></h3><br>
+      <ul>
+        <li><h4>Features:</h4>Registration/Login, Timed Quizzes with countdown</li><br>
+        <li><h4>Tech:</h4>HTML, CSS, JS, Bootstrap, Python, PHP with MySQL</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="space">
+     <p></p>
+ </div>
+<!-------------contact-------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope-circle-check"></i> dipalikalwaghe@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> 8010409296</p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/dipali-kalwaghe-104a93319" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+        <div class="btn btn2">
+        <a href="" style="display: inline-block;" download >Download CV</a>     
+        </div> 
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <div>
+          <button class="btn btn2" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ <div class="copyright">
+     <p>© Dipali. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+ </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+</body>
+</html>
